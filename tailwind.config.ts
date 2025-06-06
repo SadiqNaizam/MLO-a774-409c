@@ -52,7 +52,16 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
+                // Doraemon specific accents
+                doraemonRed: {
+                    DEFAULT: 'hsl(var(--accent-doraemon-red))',
+                    foreground: 'hsl(var(--accent-doraemon-red-foreground))'
+                },
+                doraemonYellow: {
+                    DEFAULT: 'hsl(var(--accent-doraemon-yellow))',
+                    foreground: 'hsl(var(--accent-doraemon-yellow-foreground))'
+                },
+				sidebar: { // Sidebar colors remain mapped as before
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
 					primary: 'hsl(var(--sidebar-primary))',
@@ -68,6 +77,10 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+            fontFamily: {
+                sans: ['var(--font-sans)'],
+                heading: ['var(--font-heading)'],
+            },
 			keyframes: {
 				'accordion-down': {
 					from: {
